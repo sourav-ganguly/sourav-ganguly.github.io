@@ -20,11 +20,11 @@
 
 title: Sourav's Blog
 
-author:
-  name: Sourav Ganguly
-  email: sour****@gmail.com
+author: Sourav Ganguly
+  # name: Sourav Ganguly
+  # email: sour****@gmail.com
 
-# email: souravganguly.bd@gmail.com
+email: souravga***@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Mostly technical blog. Topics are iOS, swift, flutter, firebase.
 # baseurl: "" # the subpath of your site, e.g. /blog
