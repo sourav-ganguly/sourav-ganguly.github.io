@@ -5,7 +5,8 @@ date:   2021-04-21 23:40:16 +0600
 categories: iOS
 ---
 
-PromiseKit is a library that helps with asynchronous programming in swift and Objective-C. It is a wrapper around async task. Instead of using completion and error handler, a method can return a Promise. It is explained as “PromiseKit is a thoughtful and complete implementation of promises” in the official doc.
+PromiseKit is a library that helps with asynchronous programming in swift and Objective-C. It is a wrapper around async task. Instead of using completion and error handler, a method can return a Promise. It is explained in the official doc as:
+> “PromiseKit is a thoughtful and complete implementation of promises” 
 
 #### Advantages of using PromiseKit over traditional iOS async programming:
 * Cleaner and readable code
@@ -180,6 +181,6 @@ class MyRestAPI {
 Details:[documentation](https://github.com/mxcl/PromiseKit/blob/master/Documentation/FAQ.md#do-i-need-to-worry-about-retain-cycles)
 
 ### Thanks and additional resources:
-* [https://github.com/mxcl/PromiseKit/tree/master/Documentation](https://github.com/mxcl/PromiseKit/tree/master/Documentation) (all my examples are copied from this Doc. This doc is fantastic, please take a look)
-* [https://agostini.tech/2018/10/08/using-promisekit/](https://agostini.tech/2018/10/08/using-promisekit/)
-* [https://www.raywenderlich.com/9208-getting-started-with-promisekit](https://www.raywenderlich.com/9208-getting-started-with-promisekit)
+* <https://github.com/mxcl/PromiseKit/tree/master/Documentation> (all my examples are copied from this Doc. This doc is fantastic, please take a look)
+* <https://agostini.tech/2018/10/08/using-promisekit/>
+* <https://www.raywenderlich.com/9208-getting-started-with-promisekit>
