@@ -1,3 +1,13 @@
+---
+layout: post
+title:  VIPER architecture
+date:   2021-04-4 23:40:16 +0600
+categories: iOS
+---
+
+# TODO
+
+
 VIPER architecture consists of five layers of components. Each of the letters of VIPER represents one of the layers. Lets take a look at each of the layers:
 
 1. **View (Views + ViewControllers):** This layer is comprised of Views and ViewControllers. All the view presentation logics are in this layer.
