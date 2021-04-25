@@ -1,11 +1,22 @@
----
+<!-- ---
 layout: post
 title:  VIPER architecture
-date:   2021-04-4 23:40:16 +0600
+date:   2000-04-4 23:40:16 +0600
 categories: iOS
----
+--- -->
 
 # TODO
+
+Clean Architecture's Charecterstics:
+* Major objective is separation of concern
+* Independence from frameworks. Using framework as a tool rather than design application around frameworks.
+* Highly testable. Each layer is separated with a Interface. So easy to test each layer.
+* UI and business logics are separated. 
+
+To Read:
+* https://www.objc.io/issues/13-architecture/viper/
+* https://www.raywenderlich.com/8440907-getting-started-with-the-viper-architecture-pattern
+* https://appsmaventech.com/blog/Understanding-the-Architecture-of-iOS-Apps-with-VIPER
 
 
 VIPER architecture consists of five layers of components. Each of the letters of VIPER represents one of the layers. Lets take a look at each of the layers:
