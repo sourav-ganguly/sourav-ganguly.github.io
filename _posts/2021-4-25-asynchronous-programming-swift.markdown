@@ -18,14 +18,14 @@ Asynchronous operation: A operation that allows other operation to execute befor
 
 To perform asynchronous operations in Dart, you can use the Future class and the async and await keywords.
 
-## Future
+### Future
 A future represents the result of an asynchronous operation. It has two states, completed and uncompleted. A future is uncomplete before the function's asynchronous operation finishes. If the asynchronous operation succeeds, the future completes with a value, otherwise future completes with an error.
 
-## async & await
+### async & await
 To declare a function asyncronous, use *async* keyword before the function body. 
 *await* keyword used to wait for a asynchronous process to finish before continue to execute later part of the function. But remember, *await* function only works with a function declare *async*. 
 
-## How to make a synchronous method asynchronous:
+### How to make a synchronous method asynchronous:
 
 #### Synchronous
 
