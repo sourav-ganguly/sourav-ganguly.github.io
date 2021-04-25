@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Asynchronus Programming is Flutter: Future, async, await
-date:   2021-4-25
+title:  "Asynchronus Programming is Flutter: Future, async, await"
+date:   2021-4-25 1 12:10:16 +0600
 categories: flutter, dart, async
 ---
 
