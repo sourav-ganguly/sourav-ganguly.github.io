@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introduction to PromiseKit"
-date:   2021-04-21 23:40:16 +0600
+date:   2021-04-21
 categories: iOS
 ---
 

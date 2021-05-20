@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "iOS Pen Testing/Security Testing; What It Is and How-To"
-date:   2021-04-4 23:40:16 +0600
+date:   2021-04-4
 categories: iOS, pen-testing
 ---
 

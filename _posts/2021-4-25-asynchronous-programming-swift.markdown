@@ -1,15 +1,15 @@
 ---
 layout: post
 title:  "Asynchronus Programming is Flutter: Future, async, await"
-date:   2021-4-25 1 12:10:16 +0600
+date:   2021-4-25
 categories: flutter, dart, async
 ---
 
-Asynchronous operations let your program complete work while waiting for another operation to finish. 
+> Asynchronous operations let your program complete work while waiting for another operation to finish. 
 
 #### Synchronous vs asynchronous operation:
-Synchronous operation: A operation that blocks other operations from executing before it completes.
-Asynchronous operation: A operation that allows other operation to execute before it completes.
+**Synchronous operation:** A operation that blocks other operations from executing before it completes.
+**Asynchronous operation:** A operation that allows other operation to execute before it completes.
 
 #### Here are some common asynchronous operations:
 * Fetching data over a network.
@@ -19,7 +19,7 @@ Asynchronous operation: A operation that allows other operation to execute befor
 To perform asynchronous operations in Dart, you can use the Future class and the async and await keywords.
 
 ### Future
-A future represents the result of an asynchronous operation. It has two states, completed and uncompleted. A future is uncomplete before the function's asynchronous operation finishes. If the asynchronous operation succeeds, the future completes with a value, otherwise future completes with an error.
+Future is like a reciept that it will get a value in the future. A future represents the result of an asynchronous operation. It has two states, completed and uncompleted. A future is uncomplete before the function's asynchronous operation finishes. If the asynchronous operation succeeds, the future completes with a value, otherwise future completes with an error.
 
 ### async & await
 To declare a function asyncronous, use *async* keyword before the function body. 
@@ -47,3 +47,8 @@ Future<String> createOrderMessage() async {
   return 'Your order is: $order';
 }
 ```
+
+### TODO: Streams
+
+### Thanks and additional resources:
+* <https://dart.dev/codelabs/async-await>
