@@ -10,13 +10,13 @@ categories: ios, firebase, Swift
 With Firebase Remote Config, we can define remote parameters for our app, and update them in the cloud. On the application side, we can use remote config parameters to show different features and designs of the application without updating the application.
 
 
-### Some of the Use Cases:
+## Some of the Use Cases:
 1. Rollout new features within some percentage of the users
 2. Define platform and locale-specific promos, features
 3. A/B testing of a feature
 
 
-### How the Remote Config Client Library Works:
+## How the Remote Config Client Library Works:
 Firebase included a client library to handle all the works. With the library we can:
 - Set default values for parameters
 - Fetch remote config values from the server
@@ -31,15 +31,17 @@ As I said, there is a get method which is the single access point for whether we
 Firebase Remote Config value Precedence ⬆️
 
 
-### Setting Up Steps:
+## Setting Up Steps:
 
-1. Set up RemoteConfig in the firebase( This step is not be included in this tutorial. Check out firebase official doc for details.)
+##### Set up RemoteConfig in the firebase
+This step is not be included in this tutorial. Check out [firebase official doc](https://firebase.google.com/docs/remote-config) for details.
 
-2. Install Firebase SDK
+##### Install Firebase SDK
 > pod 'Firebase/RemoteConfig
+
 Also import the .plist file from the firebase into your project. And configure firebase by calling FirebaseApp.configure() from the AppDelegate on App launch.
 
-3. Configure the singleton RemoteConfig object
+##### Configure the singleton RemoteConfig object
 
 ```swift
 remoteConfig = RemoteConfig.remoteConfig()
@@ -50,7 +52,8 @@ remoteConfig.configSettings = settings
 
 For debugging purposes, set a low value to minimumFetchInterval while developing. Otherwise, you cannot test the changed remote config value immediately. Need to remove this line in production.
 
-4. Set in-app default values
+##### Set in-app default values
+
 So that the app works as intended before fetching values from the remote server. You can set defaults from a .plist file or from a dictionary.
 
 ```swift
@@ -61,7 +64,8 @@ remoteConfig.setDefaults(aDictionary)
 
 It is a good practice to provide some default values for the remote config parameters. If the value is not set in the remote or if the app could not fetch from the network, the default value is used. When there is a remote value for a key (and it is fetched and activated), the default value will be replaced by the remote value.
 
-5. Fetch and Activate remote values
+##### Fetch and Activate remote values
+
 Fetch remote parameter values from the server with _fetchWithCompletionHandler:_ method. But to make the fetched values available for the app, you need to use the method _activateWithCompletionHandler:_
 
 ```swift
@@ -78,7 +82,6 @@ remoteConfig.fetch() { (status, error) -> Void in
   self.displayWelcome()
 }
 ```
-
 
 Here, I first fetched remote config, and on completion activated it.
 
@@ -101,7 +104,7 @@ remoteConfig.activate { [weak self] (changed, error) in
 }
 ```
 
-6. Get remote config values to use in the App with configValueForKey:
+##### Get remote config values to use in the App with configValueForKey:
 
 ```swift
 let sampleValue = remoteConfig.configValue(forKey: "sample_key")
@@ -112,7 +115,7 @@ We can get remote config value with this configValue(forKey: ) method. This meth
 The return type of the method is FIRRemoteConfigValue. Don’t worry, we can easily convert it to String, Bool, Number, or Data with the stringValue, boolValue, numberValue and dataValue methods.
 
 
-#### Tips for debugging:
+### Tips for debugging:
 - Set minimal fetch interval to 0 in RemoteConfigSettings
 
 ```swift
@@ -123,5 +126,5 @@ settings.minimumFetchInterval = 0
 - Use fetch(withExpirationDuration: 0) to fetch the value
 If we do not set these two values, we will not be able to see the changes of the remote values immediately.
 
-#### Thanks and Further reading:
+### Thanks and Further reading:
 <https://firebase.google.com/docs/remote-config>
