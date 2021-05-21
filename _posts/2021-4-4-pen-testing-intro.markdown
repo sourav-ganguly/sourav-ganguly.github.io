@@ -2,7 +2,7 @@
 layout: post
 title:  "iOS Pen Testing/Security Testing; What It Is and How-To"
 date:   2021-04-4
-categories: iOS pen-testing
+categories: iOS, pen-testing
 ---
 
 Security testing is about finding security flaws in an app. In security testing, we try to hack the app and in some cases search in the source code(white box) to find any potential security flaw.
