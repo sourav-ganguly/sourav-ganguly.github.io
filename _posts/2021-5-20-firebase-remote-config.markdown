@@ -36,7 +36,7 @@ Firebase Remote Config value Precedence ⬆️
 #### Set up RemoteConfig in the firebase -
 This step is not be included in this tutorial. Check out [firebase official doc](https://firebase.google.com/docs/remote-config) for details.
 
-#### Install Firebase SDK
+#### Install Firebase SDK -
 > pod 'Firebase/RemoteConfig
 
 Also import the .plist file from the firebase into your project. And configure firebase by calling FirebaseApp.configure() from the AppDelegate on App launch.
