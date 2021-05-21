@@ -2,7 +2,7 @@
 layout: post
 title:  "Firebase 🔥 Remote Config for iOS"
 date:   2021-5-20
-categories: ios firebase
+categories: ios, firebase
 ---
 
 > Change the behavior and appearance of your app without publishing an app update, at no cost, for unlimited daily active users.
