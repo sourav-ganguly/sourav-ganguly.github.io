@@ -10,13 +10,13 @@ categories: ios, firebase
 With Firebase Remote Config, we can define remote parameters for our app, and update them in the cloud. On the application side, we can use remote config parameters to show different features and designs of the application without updating the application.
 
 
-## Some of the Use Cases:
+### Some of the Use Cases:
 1. Rollout new features within some percentage of the users
 2. Define platform and locale-specific promos, features
 3. A/B testing of a feature
 
 
-## How the Remote Config Client Library Works:
+### How the Remote Config Client Library Works:
 Firebase included a client library to handle all the works. With the library we can:
 - Set default values for parameters
 - Fetch remote config values from the server
@@ -31,7 +31,7 @@ As I said, there is a get method which is the single access point for whether we
 Firebase Remote Config value Precedence ⬆️
 
 
-## Setting Up Steps:
+## Set-up & Configure:
 
 #### Set up RemoteConfig in the firebase -
 This step is not be included in this tutorial. Check out [firebase official doc](https://firebase.google.com/docs/remote-config) for details.
