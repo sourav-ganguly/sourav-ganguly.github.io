@@ -2,7 +2,7 @@
 layout: post
 title:  "Introduction to PromiseKit"
 date:   2021-04-21
-categories: iOS
+categories: iOS async
 ---
 
 PromiseKit is a library that helps with asynchronous programming in swift and Objective-C. It is a wrapper around async task. Instead of using completion and error handler, a method can return a Promise. It is explained in the official doc as:

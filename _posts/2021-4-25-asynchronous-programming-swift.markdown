@@ -2,7 +2,7 @@
 layout: post
 title:  "Asynchronus Programming is Flutter: Future, async, await"
 date:   2021-4-25
-categories: flutter, dart, async
+categories: flutter dart async
 ---
 
 > Asynchronous operations let your program complete work while waiting for another operation to finish. 
