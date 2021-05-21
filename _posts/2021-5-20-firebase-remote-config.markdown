@@ -33,15 +33,15 @@ Firebase Remote Config value Precedence ⬆️
 
 ## Setting Up Steps:
 
-##### Set up RemoteConfig in the firebase
+#### Set up RemoteConfig in the firebase
 This step is not be included in this tutorial. Check out [firebase official doc](https://firebase.google.com/docs/remote-config) for details.
 
-##### Install Firebase SDK
+#### Install Firebase SDK
 > pod 'Firebase/RemoteConfig
 
 Also import the .plist file from the firebase into your project. And configure firebase by calling FirebaseApp.configure() from the AppDelegate on App launch.
 
-##### Configure the singleton RemoteConfig object
+#### Configure the singleton RemoteConfig object
 
 ```swift
 remoteConfig = RemoteConfig.remoteConfig()
@@ -52,7 +52,7 @@ remoteConfig.configSettings = settings
 
 For debugging purposes, set a low value to minimumFetchInterval while developing. Otherwise, you cannot test the changed remote config value immediately. Need to remove this line in production.
 
-##### Set in-app default values
+#### Set in-app default values
 
 So that the app works as intended before fetching values from the remote server. You can set defaults from a .plist file or from a dictionary.
 
@@ -64,7 +64,7 @@ remoteConfig.setDefaults(aDictionary)
 
 It is a good practice to provide some default values for the remote config parameters. If the value is not set in the remote or if the app could not fetch from the network, the default value is used. When there is a remote value for a key (and it is fetched and activated), the default value will be replaced by the remote value.
 
-##### Fetch and Activate remote values
+#### Fetch and Activate remote values
 
 Fetch remote parameter values from the server with _fetchWithCompletionHandler:_ method. But to make the fetched values available for the app, you need to use the method _activateWithCompletionHandler:_
 
@@ -104,7 +104,7 @@ remoteConfig.activate { [weak self] (changed, error) in
 }
 ```
 
-##### Get remote config values to use in the App with configValueForKey:
+#### Get remote config values to use in the App with configValueForKey:
 
 ```swift
 let sampleValue = remoteConfig.configValue(forKey: "sample_key")
