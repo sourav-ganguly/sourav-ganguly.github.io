@@ -24,7 +24,7 @@ author: Sourav Ganguly
 
 email: sourav.ganguly@monstar-lab.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My technical blog. Things I find intersting while working and learning. Topics are mostly iOS, swift, flutter, firebase, programming in general.
+  My technical blog. Things I find intersting while working and learning. Topics are mostly iOS, Swift, flutter, firebase, reactive + functional programming and programming in general.
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: saadaakaaloo
