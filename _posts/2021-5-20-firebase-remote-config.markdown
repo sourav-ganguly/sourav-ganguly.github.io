@@ -26,7 +26,7 @@ Firebase included a client library to handle all the works. With the library we 
 As I said, there is a get method which is the single access point for whether we get the server set value or app set default values. Which value we get depends on the precedence of the data. See the below illustration to understand the data precedence.
 
 
-![Image of Yaktocat](/assets/remoteconfig.png)
+![Image of Firebase Remote Config Data Precedence](/assets/remoteconfig.png)
 
 Firebase Remote Config value Precedence ⬆️
 
