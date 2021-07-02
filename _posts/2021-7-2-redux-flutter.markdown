@@ -14,21 +14,21 @@ Redux helps you manage "global" state - state that is needed across many parts o
 > Redux is a pattern and library for managing and updating application state, using events called "actions". (3)
 
 
- ### 3 major tenants of redux:
+### 3 major tenants of redux:
  1. Single source of truth: The state of your whole application is stored in an object tree within a single store.
  2. State is read-only: The only way to change the state is to emit an action, an object describing what happened.
  3. Changes are made with pure functions: To specify how the state tree is transformed by actions, you write pure reducers.
 
- ## Redux Basics:
+## Redux Basics:
 
- ### the store: 
+### the store: 
  The center of the redux application is the store. Store is lika a container that holds the app global state. The views from different part of the application get application state from the store. 
  * Never directly modify the state inside the store.
  * Only way to update the state is to dispatch an action(action describe some event) into the store to tell it what happend. 
  * When action is dispatched, the store use reducer to update the global state.
  * The Store notify the view that the state has been updated, and the view update itself.
 
- ### the view:
+### the view:
  View is the visual representation of the current app state. View is the flutter app we wrote. How the app looks and all of it's designs are defined here. 
  * View knows nothing about the State Management.
  * View never directly update state in the Store.
@@ -36,16 +36,16 @@ Redux helps you manage "global" state - state that is needed across many parts o
  * View defines itself based on the state. 
  * For events, view dispatches events into the Store.
 
- ### actions:
+### actions:
  All of the events that can occur in the app are defined as Actions.
  * View dispathes Actions to the Store when events occur.
  * Store envoke reducer with the action. Reducer retuns a new state based on the Action. The Store updates the state.
 
- ### reducer:
+### reducer:
  Reducer is a pure function that take an action an state as an input and returns a new state as output. There is a root reducer. There are multiple reducer for each actions. The root reducer pipeline the action to respective sub-reducer, and return the returned State. 
  * The store uses reducer to update the global state for actions.
 
- ### middleware:
+### middleware:
  Middleware is reducer with side effect. For things like, network call or save data to  device memory we use reducer.
  * Before reducer, the action comes to middleware when a middlewire is present.
  * On getting action, the reducer may do some side effect like network call or save data to memory.
@@ -180,7 +180,7 @@ class FlutterReduxApp extends StatelessWidget {
 }
 ```
 
- ### advantages of edux:
+### advantages of edux:
   1. Total control over the states. Know exactly what causes state changes. Single source of truth.
   2. The patterns and tools provided by Redux make it easier to understand when, where, why, and how the state in your application is being updated, and how your application logic will behave when those changes occur.
   3. Redux guides you towards writing code that is predictable and testable, which helps give you confidence that your application will work as expected.
