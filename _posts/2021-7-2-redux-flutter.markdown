@@ -180,7 +180,7 @@ class FlutterReduxApp extends StatelessWidget {
 }
 ```
 
-### advantages of edux:
+### advantages of redux:
   1. Total control over the states. Know exactly what causes state changes. Single source of truth.
   2. The patterns and tools provided by Redux make it easier to understand when, where, why, and how the state in your application is being updated, and how your application logic will behave when those changes occur.
   3. Redux guides you towards writing code that is predictable and testable, which helps give you confidence that your application will work as expected.
