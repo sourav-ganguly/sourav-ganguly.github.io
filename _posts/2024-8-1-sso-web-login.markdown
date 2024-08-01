@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mastering SSO Web Login in iOS: Exploring Various Approaches"
-date:   2024-07-1
+date:   2024-08-1
 categories: iOS, SSO, web-login, SAML
 ---
 
