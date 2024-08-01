@@ -2,7 +2,7 @@
 layout: post
 title:  "Mastering SSO Web Login in iOS: Exploring Various Approaches"
 date:   2024-08-1
-categories: iOS, SSO, web-login, SAML
+categories: iOS SSO
 ---
 
 There are multiple ways to implement the SSO login feature in iOS mobile App. In the below article, we will explore some of the approaches. Also, we will try to get some understanding of SAML — an underlying technology for SSO. We will also see a few of the security risks involved with iOS SSO implementations.
