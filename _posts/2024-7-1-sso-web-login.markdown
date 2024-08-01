@@ -119,7 +119,7 @@ Other popular ways to implement SSO: OAuth, OpenID Connect.
 ## Do you need to add Sign In with Apple?
 
 - [is Sign In with Apple Mandatory?, Apple Developer Forums](https://forums.developer.apple.com/forums/thread/124006)
-[App Review Guidelines, Apple Developer](https://developer.apple.com/app-store/review/guidelines/#4.8)
+- [App Review Guidelines, Apple Developer](https://developer.apple.com/app-store/review/guidelines/#4.8)
 
 **Is Sign In with Apple Mandatory?**  
 - **App Review Guidelines**  
