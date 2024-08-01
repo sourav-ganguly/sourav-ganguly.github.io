@@ -44,7 +44,10 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+collections:
+  hidden_pages:
+    output: true
+
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/

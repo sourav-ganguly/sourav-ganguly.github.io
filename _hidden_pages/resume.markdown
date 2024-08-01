@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Resume
 permalink: /resume/
+layout: page
 nav_exclude: true
 ---
 
