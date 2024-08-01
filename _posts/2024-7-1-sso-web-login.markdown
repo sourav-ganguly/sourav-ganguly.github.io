@@ -116,7 +116,10 @@ SAML is an open standard for exchanging authentication and authorization data be
 
 Other popular ways to implement SSO: OAuth, OpenID Connect.
 
-### Do you need to add Sign In with Apple?
+## Do you need to add Sign In with Apple?
+
+[is Sign In with Apple Mandatory? - Apple Developer Forums](https://forums.developer.apple.com/forums/thread/124006)
+[App Review Guidelines - Apple Developer](https://developer.apple.com/app-store/review/guidelines/#4.8)
 
 **Is Sign In with Apple Mandatory?**  
 - **App Review Guidelines**  
@@ -136,24 +139,17 @@ URL schemes offer a potential attack vector into your app, so make sure to valid
 
 ### Explore from Here:
 
-- [Authenticating a User Through a Web Service | Apple Developer Documentation](https://developer.apple.com/documentation/authenticationservices/authenticating-a-user-through-a-web-service)
+- [Authenticating a User Through a Web Service, Apple Developer Documentation](https://developer.apple.com/documentation/authenticationservices/authenticating-a-user-through-a-web-service)
 - [Using ASWebAuthenticationSession with SwiftUI • Andy Ibanez](https://www.andyibanez.com/posts/using-aswebauthenticationaession-swiftui/)
 - [Log in to Websites with ASWebAuthenticationSession — Swift Dev Journal](https://www.swiftdevjournal.com/log-in-to-websites-with-aswebauthenticationsession/)
-- [Implementing OAuth with ASWebAuthenticationSession | Kodeco](https://www.kodeco.com/19364429-implementing-oauth-with-aswebauthenticationsession)
+- [Implementing OAuth with ASWebAuthenticationSession - Kodeco](https://www.kodeco.com/19364429-implementing-oauth-with-aswebauthenticationsession)
 
 ### Samples found online on SAML SSO implementation in iOS:
 
-- [iOS Deep Link Attacks Part 2 — Exploitation | 8kSec Blogs](https://8ksec.io/ios-deep-link-attacks-part-2-exploitation-8ksec-blogs/)
+- [iOS Deep Link Attacks Part 2 — Exploitation, 8kSec Blogs](https://8ksec.io/ios-deep-link-attacks-part-2-exploitation-8ksec-blogs/)
 - [Sharing Web Data with iOS Using WKWebView (atomicobject.com)](https://spin.atomicobject.com/sharing-web-data-wkwebview/)
 
 ### Documents on SSO Login not specifying SAML:
 
-- [Authenticating a User Through a Web Service | Apple Developer Documentation](https://developer.apple.com/documentation/authenticationservices/authenticating-a-user-through-a-web-service)
+- [Authenticating a User Through a Web Service - Apple Developer Documentation](https://developer.apple.com/documentation/authenticationservices/authenticating-a-user-through-a-web-service)
 - [iOS — Facebook Login](https://developers.facebook.com/docs/facebook-login/ios/)
-
----
-
-
-
-
-
