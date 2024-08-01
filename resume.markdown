@@ -1,10 +1,9 @@
 ---
 layout: default
+title: Resume
 permalink: /resume/
 nav_exclude: true
 ---
-
-## Experience
 
 ### Augmedix, Dhaka — Senior iOS Engineer  
 *APRIL 2023 - CURRENT*
